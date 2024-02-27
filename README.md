@@ -58,7 +58,7 @@ You should see `Registering filters` and `Blocking UDP traffic on port 53`
 sudo dmesg
 ```
 
-**Step 3:** Ping domain like `google.com` and it **should not work**.
+**Step 3:** Ping domain like `google.com` and it **should not work**. Sometimes It only works after step **Step 4**.
 
 ```bash
 ping google.com
@@ -67,7 +67,7 @@ ping google.com
 **Step 4:** Remove Kernel Module.
 
 ```bash
-sudo rmmode hello.ko
+sudo rmmod hello.ko
 ```
 
 # Capture TCP, UDP, & ICMP Packets
